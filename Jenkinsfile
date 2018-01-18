@@ -11,5 +11,10 @@ pipeline {
         powershell 'write-host "Test"'
       }
     }
+    stage('stage2') {
+      steps {
+        timestamps()
+      }
+    }
   }
 }
