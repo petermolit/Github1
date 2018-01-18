@@ -13,7 +13,7 @@ pipeline {
     }
     stage('stage2') {
       steps {
-        timestamps()
+        bat 'dir'
       }
     }
   }
